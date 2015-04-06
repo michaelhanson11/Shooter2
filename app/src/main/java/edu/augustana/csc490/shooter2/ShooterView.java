@@ -286,7 +286,7 @@ public class ShooterView extends SurfaceView implements SurfaceHolder.Callback
         if (basketballOnScreen) { // if there is currently a basketball on the screen
             //update basketball position
             basketball.x += interval * basketballVelocityX;
-            if(basketball.x <= peakPointX){
+            if(basketball.x < peakPointX - 50){
                 basketball.y += interval * basketballVelocityY;
             }else{
                 basketball.y -= interval * basketballVelocityY;
